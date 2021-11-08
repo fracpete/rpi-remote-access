@@ -1,6 +1,8 @@
 # rpi-remote-access
 In order to get ssh access to a Raspberry Pi (e.g., through a 4G modem or if it is behind a firewall), the [frp](https://github.com/fatedier/frp/) reverse proxy can be used.
 
+For this purpose, a server with a public IP or DNS name will act as server (e.g., an AWS server in the free tier) that the Raspberry Pi will connect to.
+
 ## Server (eg cloud VM)
 
 Inbound ports that need to be open:
