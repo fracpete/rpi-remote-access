@@ -67,13 +67,24 @@ Inbound ports that need to be open:
 
 Install frp:
 * Download appropriate [release binary](https://github.com/fatedier/frp/releases/tag/v0.37.1)
-  ```bash
-  sudo bash
-  cd /opt
-  wget https://github.com/fatedier/frp/releases/download/v0.37.1/frp_0.37.1_linux_amd64.tar.gz
-  tar -xzf frp_0.37.1_linux_amd64.tar.gz
-  ln -s frp_0.37.1_linux_amd64 frp
-  ```
+
+  * 32-bit
+    ```bash
+    sudo bash
+    cd /opt
+    wget https://github.com/fatedier/frp/releases/download/v0.37.1/frp_0.37.1_linux_arm.tar.gz
+    tar -xzf frp_0.37.1_linux_arm.tar.gz
+    ln -s frp_0.37.1_linux_arm frp
+    ```
+
+  * 64-bit
+    ```bash
+    sudo bash
+    cd /opt
+    wget https://github.com/fatedier/frp/releases/download/v0.37.1/frp_0.37.1_linux_arm64.tar.gz
+    tar -xzf frp_0.37.1_linux_arm64.tar.gz
+    ln -s frp_0.37.1_linux_arm64 frp
+    ```
 
 * Create `/etc/frpc.ini` with the following content:
   ```ini
